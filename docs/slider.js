@@ -1,4 +1,4 @@
-var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3,gif"];
+var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3.gif"];
 var index = 0;
 
 function implementLeftButton(){
@@ -18,4 +18,4 @@ function implementRightButton(){
     });
 }
 implementLeftButton();
-impelementRightButton();
+implementRightButton();
