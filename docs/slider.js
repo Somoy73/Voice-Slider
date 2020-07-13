@@ -1,4 +1,4 @@
-var imgUrl = ["./1.jpg","./2.jpg","./3,gif"];
+var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3,gif"];
 var index = 0;
 
 function implementLeftButton(){
@@ -13,7 +13,7 @@ function implementRightButton(){
     var b2 = document.getElementById('nb2');
     b2.addEventListener('click',function(){
         let x = document.getElementById('imgsld1');
-        index = (index+1)%imgUrl.length;
+        index = (index+1) % imgUrl.length;
         x.src = imgUrl[index];
     });
 }
