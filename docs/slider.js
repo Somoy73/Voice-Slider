@@ -1,4 +1,5 @@
-var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3.gif"];
+var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3.jpg",
+                "./images/4.jpg","./images/5.jpg","./images/6.jpg","./images/7.jpg"];
 var index = 0;
 
 function implementLeftButton(){
