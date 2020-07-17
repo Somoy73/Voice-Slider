@@ -1,7 +1,7 @@
 var imgUrl = ["./images/1.jpg","./images/2.jpg","./images/3.jpg",
                 "./images/4.jpg","./images/5.jpg","./images/6.jpg","./images/7.jpg"];
 var index = 0;
-
+//var recognition = new SpeechRecognition();
 function implementLeftButton(){
     var b1 = document.getElementById('nb1');
     b1.addEventListener('click',function(){
@@ -18,5 +18,17 @@ function implementRightButton(){
         x.src = imgUrl[index];
     });
 }
+function implementVoiceButton(){
+    var vButton = document.getElementById('speech');
+    vButton.addEventListener('click',function(){
+        let string = vButton.innerHTML;
+        if(string.includes('Start')){
+            vButton.innerHTML = "Stop Voice Slider";
+        }else if(string.includes('Stop')){
+            vButton.innerHTML = "Start Voice Slider";
+        }
+    });
+}
 implementLeftButton();
 implementRightButton();
+implementVoiceButton();

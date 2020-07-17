@@ -21,11 +21,13 @@
         }
         .left{
             left: 0;
-            border-radius: 3px 0 0 3px;
+            border-radius: 10px 0 0 10px;
+            background-color: rgba(100, 148, 237, 0.555);
         }
         .right {
             right: 0;
-            border-radius: 3px 0 0 3px;
+            border-radius: 10px 0 0 10px;
+            background-color: rgba(100, 148, 237, 0.603);
         }
 
         .left, .right {
@@ -61,6 +63,16 @@
             height: 100%;
             background: #0e1d158e;
         }
+        #speech{
+            position: relative;
+            left: 45%;
+            height:50px;
+            width: 100px;
+            background-color: rgba(43, 43, 209, 0.671);
+            border-radius: 15px;
+            color:rgb(144, 174, 238);
+
+        }
     </style>
 </head>
 <body>
@@ -72,9 +84,9 @@
             <img src = "./images/1.jpg" class="imageSlider" id='imgsld1' alt="loading..." ></img>
             <button class="left" id='nb1'>Back</button>
             <button class="right" id='nb2'>Next</button>
+            <button id="speech">Start Voice Slider</button>
         </div>
     </div>
     <script src="./slider.js"></script>
-
 </body>
 </html>
