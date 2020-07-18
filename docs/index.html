@@ -14,10 +14,10 @@
             height: 90%;
             top: 5%;
         }
-        .header1{
+        #header1{
             margin-left: auto;
             margin-right: auto;
-            width:18%;
+            width:17.5%;
         }
         .left{
             left: 0;
@@ -68,23 +68,24 @@
             left: 45%;
             height:50px;
             width: 100px;
-            background-color: rgba(43, 43, 209, 0.671);
+            background-color: rgba(32, 235, 140, 0.815);
             border-radius: 15px;
-            color:rgb(144, 174, 238);
-
+            color:rgb(240, 248, 125);
+            font-size: 25px;
+            text-shadow: 0 0 5px #f83333, 0 0 5px #fa3a3a ;
         }
     </style>
 </head>
 <body>
     <div id="maindiv">
         <div class="headdiv">
-            <h2 class="header1">Welcome to Voice Slider</h2>
+            <h2 id="header1">Welcome to Voice Slider</h2>
         </div>
         <div id="slider">
             <img src = "./images/1.jpg" class="imageSlider" id='imgsld1' alt="loading..." ></img>
             <button class="left" id='nb1'>Back</button>
             <button class="right" id='nb2'>Next</button>
-            <button id="speech">Start Voice Slider</button>
+            <button id="speech">Start</button>
         </div>
     </div>
     <script src="./slider.js"></script>
