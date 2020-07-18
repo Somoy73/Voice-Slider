@@ -5,7 +5,17 @@ var index = 0;
 const vButton = document.getElementById('speech');
 const b1 = document.getElementById('nb1');
 const b2 = document.getElementById('nb2');
+var rec;
+const probability = 0.4;
 
+function createRec(){
+    try{
+        rec = new webkitSpeechRecognition();
+    }catch(e){
+        alert('voice initialization failed. This will only work in Chromium Browsers!');
+    }
+}
+createRec();
 
 function implementLeftButton(){
     b1.addEventListener('click',function(){
@@ -28,12 +38,49 @@ function implementVoiceButton(){
         if(string.includes('Start')){
             vButton.innerHTML = "Stop";
             vButton.style = "background-color: rgba(235, 62, 32, 0.815);";
+            audioCommandStart();
         }else if(string.includes('Stop')){
             vButton.innerHTML = "Start";
             vButton.style = "background-color: rgba(32, 235, 140, 0.815);";
+            audioCommandStop();
         }
     });
 }
+
+rec.onresult = function(e){
+    for(var i = e.resultIndex; i<e.results.length; ++i){
+        if(e.results[i].isFinal){
+            let x = e.results[i].length;
+            for(let j=0; j<x; ++j){
+                if(parseFloat(e.results[i][j].confidence)>=parseFloat(probability)){
+                    var str = e.results[i][j].transcript;
+                    console.log(str);
+                    if(str.includes('next')){
+                        b2.click();
+                        break;
+                    }else if(str.includes('prev') || str.includes('back')){
+                        b1.click();
+                        break;
+                    }else if(str.includes('stop')){
+                        vButton.click();
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+
+function audioCommandStart(){
+    rec.continuous = true;
+    rec.languge = 'en';
+    rec.start();
+}
+
+function audioCommandStop(){
+    rec.stop();
+}
+
 implementLeftButton();
 implementRightButton();
 implementVoiceButton();
