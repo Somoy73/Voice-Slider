@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Diplomata SC' rel='stylesheet'>
     <title>Voice Slider</title>
     <style>
         .imageSlider{
@@ -17,17 +18,23 @@
         #header1{
             margin-left: auto;
             margin-right: auto;
-            width:17.5%;
+            left: 5px;
+            width: 30%;
+            height: 80%;
+            font-family: 'Diplomata SC';
+            color: rgba(248, 241, 232, 0.945);
+            text-align: center;
+            text-shadow: 0 0 5px #fa6044, 0 0 5px #fa7334 ;
         }
         .left{
             left: 2px;
             border-radius: 10px 0 0 10px;
-            background-color: rgba(100, 148, 237, 0.555);
+            background-color: rgba(219, 183, 65, 0.651);
         }
         .right {
             right: 2px;
             border-radius: 10px 0 0 10px;
-            background-color: rgba(100, 148, 237, 0.603);
+            background-color: rgba(219, 183, 65, 0.651);
         }
 
         .left, .right {
@@ -44,7 +51,9 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
         }
-
+        .left:hover, .right:hover{
+            background-color: rgba(255, 255, 255, 0.808);
+        }
         #slider{
             width: 50%;
             height: 75%;
@@ -63,6 +72,7 @@
             height: 100%;
             background: #0e1d158e;
             overflow: scroll;
+            background-image: url('./images/bg1.jpg');
         }
         #speech{
             position: relative;
@@ -71,22 +81,39 @@
             width: 100px;
             background-color: rgba(32, 235, 140, 0.815);
             border-radius: 15px;
-            color:rgb(240, 248, 125);
+            color:rgb(242, 247, 170);
             font-size: 25px;
             text-shadow: 0 0 5px #f83333, 0 0 5px #fa3a3a ;
+        }
+        #speech:hover{
+            background-color: rgba(25, 167, 100, 0.815) ;
+        }
+        .footer {
+            text-align: center;
+            padding: 2px;
+            background-color: rgba(133, 125, 125, 0.295);
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="main" id="maindiv">
         <div class="headdiv">
-            <h2 id="header1">Welcome to Voice Slider</h2>
+            <h2 id="header1">Welcome<br/> to<br/> Voice Slider</h2>
         </div>
         <div id="slider">
             <img src = "./images/1.jpg" class="imageSlider" id='imgsld1' alt="loading..." ></img>
             <button class="left" id='nb1'>Back</button>
             <button class="right" id='nb2'>Next</button>
             <button id="speech">Start</button>
+        </div>
+        <br/><br/>
+        <br/><br/>
+        <div class="footer">
+            <footer>
+                <p>All rights Reserved © 2020 By Somoy Subandhu</p>
+                <a href="https://github.com/Somoy73/"><img src='./images/git.png'></img></a>
+              </footer>
         </div>
     </div>
     <script src="./slider.js"></script>

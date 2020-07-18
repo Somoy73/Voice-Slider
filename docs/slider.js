@@ -6,7 +6,7 @@ const vButton = document.getElementById('speech');
 const b1 = document.getElementById('nb1');
 const b2 = document.getElementById('nb2');
 var rec;
-const probability = 0.4;
+const probability = 0.3;
 
 function createRec(){
     try{
