@@ -4,7 +4,7 @@
 <br/>
 Make you website standout by using sliders that can also be Voice-Controlled!
 
-Website-Demo : <a href="https://somoy73.github.io/Voice-Slider/"></a>
+Website-Demo : <a href="https://somoy73.github.io/Voice-Slider/">Voice Slider</a>
 
 Simply, Click on the Play button and speak out aloud from one of the Commands below -
 
