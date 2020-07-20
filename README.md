@@ -6,8 +6,10 @@
 
 <b>Website-Demo : <a href="https://somoy73.github.io/Voice-Slider/">Voice Slider</a></b>
 
-<img src="./demo.JPG"></img> <br/>
+<img src="./demo.JPG"></img>
+<br/>
 Simply, Click on the Start button and speak out aloud from one of the Commands below!
+<br/>
 <b>
 Available List of Commands:
 - Say "Next" to move to the next image of the slider.
