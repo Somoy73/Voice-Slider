@@ -46,6 +46,11 @@ function implementVoiceButton(){
         }
     });
 }
+function imageJump(val){
+    let x = document.getElementById('imgsld1');
+    index = val;
+    x.src = imgUrl[index];
+}
 
 rec.onresult = function(e){
     for(var i = e.resultIndex; i<e.results.length; ++i){
@@ -63,6 +68,12 @@ rec.onresult = function(e){
                         break;
                     }else if(str.includes('stop')){
                         vButton.click();
+                        break;
+                    }else if(str.includes('last')){
+                        imageJump(imgUrl.length-1);
+                        break;
+                    }else if(str.includes('first')){
+                        imageJump(0);
                         break;
                     }
                 }
