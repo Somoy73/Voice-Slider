@@ -1,6 +1,6 @@
 # Voice-Slider
-<img src="https://img.shields.io/badge/Author-Somoy%20Subandhu-orange"></img>
-
+<img src="https://img.shields.io/badge/Author-Somoy%20Subandhu-orange"></img><br/>
+<img src="https://img.shields.io/github/license/Somoy73/Voice-Slider?style=plastic"></img>
 <br/>
 <b>Make you website standout by using sliders that can also be Voice-Controlled!</b>
 
