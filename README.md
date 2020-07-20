@@ -6,8 +6,8 @@ Make you website standout by using sliders that can also be Voice-Controlled!
 
 Website-Demo : <a href="https://somoy73.github.io/Voice-Slider/">Voice Slider</a>
 
-Simply, Click on the Play button and speak out aloud from one of the Commands below -
-
+<img src="./demo.JPG"></img> <br/>
+Simply, Click on the Play button and speak out aloud from one of the Commands below!
 Available List of Commands:
 - Say "Next" to move to the next image of the slider.
 - Say "Previous" or "Back" to move to  the previous image of the slider.
@@ -16,6 +16,6 @@ Available List of Commands:
 
 Have fun!
 
-P.S: Mozilla and Safari is not supported! 
+P.S: Mozilla and Safari are not supported for now.
 
 
