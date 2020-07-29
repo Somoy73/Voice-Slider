@@ -19,6 +19,7 @@ Available List of Commands:
 </b>
 Feel free to edit the code and add your own commands! Have fun!
 
-P.S: Mozilla and Safari are not supported for now.
+P.S: Mozilla and Safari are not supported for now. However, this will work just fine in Chrome, Edge and Samsung Browser.
+Try Chrome for best Experience
 
 
